@@ -1,0 +1,2 @@
+banner 和 banner_item 是一对多关系
+banner_item 是一对一关系
