@@ -1,0 +1,203 @@
+---------------------------------------------------------------
+[ 2018-04-10T16:30:34+08:00 ] 127.0.0.1 GET /api/v1/theme/1
+[ info ] tp5.cn/api/v1/theme/1 [运行时间：1.403081s][吞吐率：0.71req/s] [内存消耗：3,516.41kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T16:51:56+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=15
+[ info ] tp5.cn/api/v1/product/recent?count=15 [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：2,827.87kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T16:52:05+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=1
+[ info ] tp5.cn/api/v1/product/recent?count=1 [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：2,820.86kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T16:52:24+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=3
+[ info ] tp5.cn/api/v1/product/recent?count=3 [运行时间：0.113006s][吞吐率：8.85req/s] [内存消耗：2,821.84kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 3 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-04-10T16:52:30+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=4
+[ info ] tp5.cn/api/v1/product/recent?count=4 [运行时间：0.109007s][吞吐率：9.17req/s] [内存消耗：2,822.37kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 4 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T16:52:35+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=5
+[ info ] tp5.cn/api/v1/product/recent?count=5 [运行时间：0.109007s][吞吐率：9.17req/s] [内存消耗：2,822.88kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:02:14+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079 [运行时间：61.054492s][吞吐率：0.02req/s] [内存消耗：2,892.48kb] [文件加载：50]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:03:04+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079 [运行时间：24.360393s][吞吐率：0.04req/s] [内存消耗：2,947.32kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:04:09+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079 [运行时间：0.138008s][吞吐率：7.25req/s] [内存消耗：2,890.79kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:04:59+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079 [运行时间：0.122007s][吞吐率：8.20req/s] [内存消耗：2,891.19kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:05:00+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/product/recent?count=5&XDEBUG_SESSION_START=13079 [运行时间：0.112007s][吞吐率：8.93req/s] [内存消耗：2,891.19kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 5 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:15:06+08:00 ] 127.0.0.1 GET /api/v1/theme?ids=4,5,6
+[ info ] tp5.cn/api/v1/theme?ids=4,5,6 [运行时间：0.116007s][吞吐率：8.62req/s] [内存消耗：3,356.37kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (4,5,6) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:15:57+08:00 ] 127.0.0.1 GET /api/v1/theme/2
+[ info ] tp5.cn/api/v1/theme/2 [运行时间：0.209012s][吞吐率：4.78req/s] [内存消耗：3,598.70kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 2 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (2) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (17) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (50) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:16:01+08:00 ] 127.0.0.1 GET /api/v1/theme/1
+[ info ] tp5.cn/api/v1/theme/1 [运行时间：0.237014s][吞吐率：4.22req/s] [内存消耗：3,585.01kb] [文件加载：65]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49) [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:17:39+08:00 ] 127.0.0.1 GET /api/v1/banner/1?XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/banner/1?XDEBUG_SESSION_START=13079 [运行时间：0.249014s][吞吐率：4.02req/s] [内存消耗：3,133.65kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.048002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:29:02+08:00 ] 127.0.0.1 GET /api/v1/banner/1?XDEBUG_SESSION_START=13079
+[ info ] tp5.cn/api/v1/banner/1?XDEBUG_SESSION_START=13079 [运行时间：40.977344s][吞吐率：0.02req/s] [内存消耗：3,185.47kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035002s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.029002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:36:30+08:00 ] 127.0.0.1 GET /api/v1/product/recent
+[ info ] tp5.cn/api/v1/product/recent [运行时间：0.119006s][吞吐率：8.40req/s] [内存消耗：2,896.73kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 15 [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:36:43+08:00 ] 127.0.0.1 GET /api/v1/product/recent?count=1
+[ info ] tp5.cn/api/v1/product/recent?count=1 [运行时间：0.084004s][吞吐率：11.90req/s] [内存消耗：2,889.77kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY create_time desc LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:37:09+08:00 ] 127.0.0.1 GET /api/v1/category/all
+[ info ] tp5.cn/api/v1/category/all [运行时间：0.155009s][吞吐率：6.45req/s] [内存消耗：2,993.55kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:38:03+08:00 ] 127.0.0.1 GET /api/v1/category/all
+[ info ] tp5.cn/api/v1/category/all [运行时间：0.131008s][吞吐率：7.63req/s] [内存消耗：2,994.14kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:40:31+08:00 ] 127.0.0.1 GET /api/v1/category/all
+[ info ] tp5.cn/api/v1/category/all [运行时间：0.151008s][吞吐率：6.62req/s] [内存消耗：2,994.88kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.002001s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:40:47+08:00 ] 127.0.0.1 GET /api/v1/category/all
+[ info ] tp5.cn/api/v1/category/all [运行时间：0.152009s][吞吐率：6.58req/s] [内存消耗：2,994.88kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T17:58:25+08:00 ] 127.0.0.1 GET /api/v1/product/by_category?id=3
+[ info ] tp5.cn/api/v1/product/by_category?id=3 [运行时间：0.212012s][吞吐率：4.72req/s] [内存消耗：2,899.41kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 3 [ RunTime:0.014001s ]
+---------------------------------------------------------------
+[ 2018-04-10T18:01:27+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] tp5.cn/api/v1/banner/1 [运行时间：0.389022s][吞吐率：2.57req/s] [内存消耗：3,136.73kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T18:02:33+08:00 ] 127.0.0.1 GET /api/v1/product/by_category/2
+[ info ] tp5.cn/api/v1/product/by_category/2 [运行时间：0.125007s][吞吐率：8.00req/s] [内存消耗：2,901.45kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 2 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T18:03:57+08:00 ] 127.0.0.1 GET /api/v1/product/by_category?id=2
+[ info ] tp5.cn/api/v1/product/by_category?id=2 [运行时间：0.200011s][吞吐率：5.00req/s] [内存消耗：2,900.95kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 2 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T18:04:03+08:00 ] 127.0.0.1 GET /api/v1/product/by_category?id=3
+[ info ] tp5.cn/api/v1/product/by_category?id=3 [运行时间：0.113006s][吞吐率：8.85req/s] [内存消耗：2,899.41kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;dbname=wavlink;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `category_id` = 3 [ RunTime:0.001000s ]
