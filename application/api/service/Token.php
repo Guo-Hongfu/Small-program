@@ -8,6 +8,11 @@
 namespace app\api\service;
 
 
+use app\lib\exception\TokenException;
+use think\Cache;
+use think\Exception;
+use think\Request;
+
 class Token
 {
     //生成Token
@@ -19,5 +24,29 @@ class Token
         //salt 盐
         $salt = config('secure.token_salt');
         return md5($randChars.$timestamp.$salt);
+    }
+    //通用的获取 缓存中token 的某一个值
+    public static function getCurrentTokenVar($key){
+        $token = Request::instance()->header('token');
+        $vars = Cache::get($token);
+        if (!$vars){
+            throw new TokenException();
+        }else{
+            if(!is_array($vars)){
+                $vars = json_decode($vars,true);
+            }
+            if(array_key_exists($key,$vars)){
+                return $vars[$key];
+            }else{
+                throw new Exception('尝试获取的Token变量并不存在');
+            }
+        }
+    }
+    //获取当前客户的id号
+    //根据Token来获取uid号，
+    public static function getCurrentUid(){
+        //token
+        $uid = self::getCurrentTokenVar('uid');
+        return $uid;
     }
 }

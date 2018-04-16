@@ -15,7 +15,8 @@ use think\Validate;
 
 class BaseValidate extends Validate
 {
-    public function goCheck($scene='') {
+    public function goCheck($scene = '')
+    {
         //获取http传入的参数
         //对这些参数进行校验
         $params = Request::instance()->param();
@@ -43,7 +44,8 @@ class BaseValidate extends Validate
      * 验证参数id是否是正整数
      * @return bool
      */
-    protected function isPositiveInteger($value, $rule = '', $data = '', $field = '') {
+    protected function isPositiveInteger($value, $rule = '', $data = '', $field = '')
+    {
         if (is_numeric($value) && is_int($value + 0) && ($value + 0) > 0) {
             return true;
         } else {
@@ -54,12 +56,33 @@ class BaseValidate extends Validate
     /**
      * 判断不为空
      */
-    protected function isNotEmpty($value, $rule = '', $data = '', $field = '') {
+    protected function isNotEmpty($value, $rule = '', $data = '', $field = '')
+    {
         if (empty($value)) {
             return false;
         } else {
             return true;
         }
+    }
+
+    //根据验证器的规则获取指定的数据
+    public function getDataByRule($arrays)
+    {
+        if (array_key_exists('user_id', $arrays) |
+            array_key_exists('uid', $arrays)
+        ) {
+            //不允许包含user_id或者uid,防止恶意覆盖user_id或者uid
+            throw new ParameterException(
+                [
+                    'msg' => '参数中包含非法的参数名user_id或者uid',
+                ]);
+        }
+        $newArray = [];
+        // $this->rule 定义的规则数组
+        foreach ($this->rule as $key => $value){
+            $newArray[$key] = $arrays[$key];
+        }
+        return $newArray;
     }
 }
 
