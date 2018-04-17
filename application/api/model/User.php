@@ -12,6 +12,7 @@ class User extends BaseModel
 {
     //user 和 useraddress 关联关系
     public function address(){
+//        return $this->hasOne('UserAddress'); 这样也可以
         return $this->hasOne('UserAddress','user_id','id');
     }
     public static function getByOpenID($openid){

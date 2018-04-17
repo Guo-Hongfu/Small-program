@@ -1,0 +1,87 @@
+---------------------------------------------------------------
+[ 2018-04-17T22:02:34+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.tp5.com/api/v1/token/user [运行时间：0.900051s][吞吐率：1.11req/s] [内存消耗：2,590.39kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.108006s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.068003s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.002001s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('oma_10J3M2QyBZn672xtDAya8I7U') [ RunTime:0.010000s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:03:06+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.256014s][吞吐率：3.91req/s] [内存消耗：2,727.90kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.033001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `user_address` (`name` , `mobile` , `province` , `city` , `country` , `detail` , `user_id`) VALUES ('qiyue' , '17688458671' , '黑色玫瑰' , '撸啊撸' , '闪金镇' , 'hello world!' , 1) [ RunTime:0.016001s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:16:13+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：2,723.40kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `name`='qiyue',`mobile`='17688458671',`province`='黑色玫瑰',`city`='撸啊撸',`country`='闪金金子镇',`detail`='hell world!'  WHERE  `id` = 1 [ RunTime:0.041002s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:17:12+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：2,723.40kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `name`='qiyue',`mobile`='17688458671',`province`='黑色玫瑰',`city`='英雄联盟',`country`='闪金镇',`detail`='hell world!'  WHERE  `id` = 1 [ RunTime:0.028001s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:24:18+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：2,722.62kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `name`='qiyue',`mobile`='17688458671',`province`='黑色的玫瑰',`city`='英雄联盟',`country`='闪金镇',`detail`='hell world!'  WHERE  `id` = 1 [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:25:24+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.110007s][吞吐率：9.09req/s] [内存消耗：2,723.46kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:26:03+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：2,719.45kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `city`='英雄得到的联盟'  WHERE  `id` = 1 [ RunTime:0.028002s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:26:32+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.100006s][吞吐率：10.00req/s] [内存消耗：2,719.41kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `country`='闪金金子金子镇'  WHERE  `id` = 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:27:41+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：2,719.68kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `province`='黑色踩踩踩从玫瑰'  WHERE  `id` = 1 [ RunTime:0.020001s ]
+---------------------------------------------------------------
+[ 2018-04-17T22:28:20+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：2,723.52kb] [文件加载：62]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `user_address`  SET `name`='qiyue',`mobile`='17688458671',`province`='黑色玫瑰',`city`='英雄联盟',`country`='金子镇',`detail`='hell world!'  WHERE  `id` = 1 [ RunTime:0.038002s ]

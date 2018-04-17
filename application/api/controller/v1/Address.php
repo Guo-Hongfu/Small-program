@@ -38,8 +38,9 @@ class Address
             $user->address()->save($dataArray);
         }else{
             //关联模型更新操作(没有括号)
-            $user->address->sava($dataArray);
+//            $userAddress->update($dataArray,['id'=>$uid]);
+            $userAddress->save($dataArray);
         }
-        return new SuccessMessage();
+        return json(new SuccessMessage(),201);
     }
 }
