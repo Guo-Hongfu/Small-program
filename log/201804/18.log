@@ -1,0 +1,112 @@
+---------------------------------------------------------------
+[ 2018-04-18T22:03:07+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.tp5.com/api/v1/token/user [运行时间：0.822047s][吞吐率：1.22req/s] [内存消耗：2,593.31kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.058004s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:03:22+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.212012s][吞吐率：4.72req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.054003s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:03:39+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:34+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.122007s][吞吐率：8.20req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:37+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.118007s][吞吐率：8.47req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:37+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:38+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:38+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.122007s][吞吐率：8.20req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:39+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.128007s][吞吐率：7.81req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:39+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.124007s][吞吐率：8.06req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:43+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.tp5.com/api/v1/token/user [运行时间：0.406023s][吞吐率：2.46req/s] [内存消耗：2,592.40kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:04:59+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:05:26+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.tp5.com/api/v1/token/user [运行时间：0.400023s][吞吐率：2.50req/s] [内存消耗：2,592.40kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:05:46+08:00 ] 127.0.0.1 POST /api/v1/address
+[ info ] www.tp5.com/api/v1/address [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：3,007.45kb] [文件加载：69]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-18T22:06:16+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] www.tp5.com/api/v1/token/user [运行时间：0.386022s][吞吐率：2.59req/s] [内存消耗：2,592.40kb] [文件加载：57]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
