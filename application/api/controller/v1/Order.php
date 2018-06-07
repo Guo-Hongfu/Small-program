@@ -1,19 +1,20 @@
 <?php
+namespace app\api\controller\v1;
 /**use app\lib\enum\ScopeEnum;
  * Created by PhpStorm.
  * User: Guo-Hongfu
  * Date: 2018/4/19
  * Time: 22:48
  */
-namespace app\api\controller\v1;
 
 use app\api\validate\OrderPlace;
 use app\api\service\Token as TokenService;
+use app\api\service\Order as OrderService;
 class Order extends BaseController
 {
-    protected $beforeActionList = [
-        'checkExclusiveScope' => ['only'=>'placeOrder']
-    ];
+//    protected $beforeActionList = [
+//        'checkExclusiveScope' => ['only'=>'placeOrder']
+//    ];
 
     // 用户在选择商品后，向API提交包含它所选择商品的相关信息
     // API在接受到信息后，需要检查订单相关商品的库存量
@@ -26,9 +27,17 @@ class Order extends BaseController
     // 成功：进行库存量的扣除，
     public function placeOrder(){
         //cms管理员账号没有权限调用下单接口。
-        (new OrderPlace())->goCheck();
+//        (new OrderPlace())->goCheck();
         //后面加了 /a 获取products数组
         $products = input('post.products/a');
-        $uid = TokenService::getCurrentUid();
+        print_r($products);
+//        $uid = TokenService::getCurrentUid();
+        $uid = 1;
+        $order = new OrderService();
+        $status = $order->place($uid,$products);
+        return $status;
+    }
+    public function index(){
+        return 'hello';
     }
 }

@@ -1,0 +1,179 @@
+---------------------------------------------------------------
+[ 2018-06-07T21:23:49+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.983057s][吞吐率：1.02req/s] [内存消耗：2,774.87kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112007s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.197011s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:31:54+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.784045s][吞吐率：1.28req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.017001s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:33:16+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.425024s][吞吐率：2.35req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:40:40+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.425024s][吞吐率：2.35req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:41:23+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.376022s][吞吐率：2.66req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:42:38+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.378022s][吞吐率：2.65req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:43:22+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.374022s][吞吐率：2.67req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:44:10+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.399023s][吞吐率：2.51req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:45:01+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.474027s][吞吐率：2.11req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:47:10+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.798045s][吞吐率：1.25req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:48:01+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.374022s][吞吐率：2.67req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:48:35+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.859049s][吞吐率：1.16req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:49:20+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.391022s][吞吐率：2.56req/s] [内存消耗：2,599.11kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:49:42+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.461027s][吞吐率：2.17req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:51:28+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.447082s][吞吐率：0.69req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:52:10+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.365021s][吞吐率：2.74req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:53:33+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.423024s][吞吐率：2.36req/s] [内存消耗：2,599.09kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:54:56+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.710098s][吞吐率：0.58req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:54:59+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.482085s][吞吐率：0.67req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.004001s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:55:04+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.153066s][吞吐率：0.87req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:56:54+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.211069s][吞吐率：0.83req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T21:58:53+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.423024s][吞吐率：2.36req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:00:29+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.103063s][吞吐率：0.91req/s] [内存消耗：2,599.10kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:00:53+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.384022s][吞吐率：2.60req/s] [内存消耗：2,599.17kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:16:16+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：5.500314s][吞吐率：0.18req/s] [内存消耗：2,599.18kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:17:00+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：1.473084s][吞吐率：0.68req/s] [内存消耗：2,599.18kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:18:43+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.510029s][吞吐率：1.96req/s] [内存消耗：2,599.17kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:21:15+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.426024s][吞吐率：2.35req/s] [内存消耗：2,599.19kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:34:57+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.575033s][吞吐率：1.74req/s] [内存消耗：2,979.34kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
