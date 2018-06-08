@@ -14,6 +14,7 @@ use app\api\model\UserAddress;
 use app\lib\exception\OrderException;
 use app\lib\exception\UserException;
 use app\api\model\Order as OrderModel;
+use think\Db;
 
 class Order
 {
@@ -52,6 +53,7 @@ class Order
     //创建订单
     private function createOrder($snap)
     {
+        Db::startTrans();//开启事务
         try {
             //生成订单号
             $orderNo = $this->makeOrderNo();
@@ -65,7 +67,6 @@ class Order
                 'snap_name' => $snap['snapName'],
                 'snap_address' => $snap['snapAddress'],
                 'snap_items' => json_encode($snap['pStatus']),
-                'create_time' => time()
             ];
             $order->save($orderData);
 
@@ -79,6 +80,7 @@ class Order
             }
             $orderProduct = new OrderProduct();
             $orderProduct->saveAll($this->oProducts);
+            Db::commit();//提交事务
             //创建订单完成，返回订单信息。
             return [
                 'order_no' => $orderNo,
@@ -87,6 +89,7 @@ class Order
                 'pass'   => true,
             ];
         } catch (\Exception $e) {
+            Db::rollback();//事务回滚
             throw $e;
         }
     }
@@ -136,6 +139,7 @@ class Order
         return $snap;
     }
 
+    //获取用户地址
     private function getUserAddress()
     {
         $userAddress = UserAddress::where('user_id', '=', $this->uid)->find();
@@ -148,6 +152,24 @@ class Order
         return $userAddress->toArray();
     }
 
+    /**
+     *在类的外部，拿到订单id，检测订单中产品的库存的方法
+     * 可以在外部调用
+     * @param $orderID
+     * @return array
+     */
+    public function checkOrderStock($orderID){
+        $oProducts = OrderProduct::where('order_id','=',$orderID)
+            ->select();
+        $this->oProducts = $oProducts;
+        $this->products = $this->getProductByOrder($oProducts);
+        $status = $this->getOrderStatus();
+        return $status;
+    }
+    /**
+     * @return array
+     * 订单检测库存
+     */
     private function getOrderStatus()
     {
         $status = [
@@ -169,6 +191,15 @@ class Order
         return $status;
     }
 
+
+    /**
+     * @param $oPID
+     * @param $oCount
+     * @param $products
+     * @return array
+     * @throws OrderException
+     * 检测库存量
+     */
     private function getProductStatus($oPID, $oCount, $products)
     {
         $pIndex = -1;

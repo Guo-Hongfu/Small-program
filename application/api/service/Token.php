@@ -76,4 +76,12 @@ class Token
             throw new TokenException();
         }
     }
+    //检测传过来的id和令牌的id是否是同一个
+    public static function isValidOperate($checkUID){
+        if(!$checkUID){
+            throw new Exception([
+                '检测UID时必须传入一个被检测的UID'
+            ]);
+        }
+    }
 }
