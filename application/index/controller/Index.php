@@ -5,6 +5,7 @@ class Index
 {
     public function index()
     {
-        return 'ok';
+        $a='a,b';$b='c';$c='d,e';
+        var_dump(zuhe($a,$b,$c)) ;
     }
 }

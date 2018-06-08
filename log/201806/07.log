@@ -177,3 +177,40 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038002s ]
 [ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:41:01+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.443025s][吞吐率：2.26req/s] [内存消耗：2,979.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:56:28+08:00 ] 127.0.0.1 POST /api/v1/order/?XDEBUG_SESSION_START=18782
+[ info ] ceshi.cn/api/v1/order/?XDEBUG_SESSION_START=18782 [运行时间：0.460026s][吞吐率：2.17req/s] [内存消耗：3,372.34kb] [文件加载：63]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,3) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_img` , `snap_name` , `snap_address` , `snap_items`) VALUES (1 , 'B607833883026067' , 0.05 , 5 , 'http://tp5.cn/images/product-vg@1.png' , '芹菜 半斤等' , '{\"name\":\"qiyue\",\"mobile\":\"17688458671\",\"province\":\"\\u9ed1\\u8272\\u73ab\\u7470\",\"city\":\"\\u82f1\\u96c4\\u8054\\u76df\",\"country\":\"\\u91d1\\u5b50\\u9547\",\"detail\":\"hell world!\",\"update_time\":\"1970-01-01 08:00:00\"}' , '[{\"id\":1,\"havaStock\":true,\"counts\":2,\"price\":\"0.01\",\"name\":\"\\u82b9\\u83dc \\u534a\\u65a4\",\"totalPrice\":0.02,\"main_img_url\":\"http:\\/\\/tp5.cn\\/images\\/product-vg@1.png\"},{\"id\":3,\"havaStock\":true,\"counts\":3,\"price\":\"0.01\",\"name\":\"\\u7d20\\u7c73 327\\u514b\",\"totalPrice\":0.03,\"main_img_url\":\"http:\\/\\/tp5.cn\\/images\\/product-rice@1.png\"}]') [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order_product` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (1 , 2 , 1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `order_product` (`product_id` , `count` , `order_id`) VALUES (3 , 3 , 1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T22:56:58+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.600034s][吞吐率：1.67req/s] [内存消耗：2,979.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-07T23:40:42+08:00 ] 127.0.0.1 POST /api/v1/token/user
+[ info ] ceshi.cn/api/v1/token/user [运行时间：0.607035s][吞吐率：1.65req/s] [内存消耗：2,979.38kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oma_10J3M2QyBZn672xtDAya8I7U' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-07T23:58:19+08:00 ] 127.0.0.1 POST /api/v1/order/?XDEBUG_SESSION_START=18782
+[ info ] ceshi.cn/api/v1/order/?XDEBUG_SESSION_START=18782 [运行时间：0.223012s][吞吐率：4.48req/s] [内存消耗：3,248.06kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,3) [ RunTime:0.002001s ]

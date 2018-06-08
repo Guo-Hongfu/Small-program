@@ -7,5 +7,5 @@
  */
 
 
-
-phpinfo();
+$a='a,b';$b='c';
+return zuhe($a,$b);
