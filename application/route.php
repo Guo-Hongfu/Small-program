@@ -39,5 +39,9 @@ Route::post('api/:version/token/user', 'api/:version.Token/getToken');
 Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress');
 
 Route::post('api/:version/order/','api/:version.Order/placeOrder');
+Route::post('api/:version/order/by_user','api/:version.Order/getSummaryByUser');
 
 Route::post('api/:version/pay/pre_order','api/:version.Pay/getPreOrder');
+
+//给微信回调的一个API地址，微信将访问这个地址，从而实现回调通知
+Route::post('api/:version/pay/notify','api/:version.Pay/receiveNotify');

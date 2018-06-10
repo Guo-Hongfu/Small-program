@@ -83,5 +83,10 @@ class Token
                 '检测UID时必须传入一个被检测的UID'
             ]);
         }
+        $currentOperateUID = self::getCurrentUid();
+        if ($currentOperateUID == $checkUID){
+            return true;
+        }
+        return false;
     }
 }
