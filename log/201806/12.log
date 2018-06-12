@@ -1,0 +1,242 @@
+---------------------------------------------------------------
+[ 2018-06-12T21:07:01+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.562032s][吞吐率：1.78req/s] [内存消耗：3,172.52kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.082005s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:08:06+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.188011s][吞吐率：5.32req/s] [内存消耗：3,172.52kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:08:12+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.204012s][吞吐率：4.90req/s] [内存消耗：3,172.52kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:08:58+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.248014s][吞吐率：4.03req/s] [内存消耗：3,172.52kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.038002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:10:24+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.148009s][吞吐率：6.76req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:13:23+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.190011s][吞吐率：5.26req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:15:53+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.241014s][吞吐率：4.15req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:16:08+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.177010s][吞吐率：5.65req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.026002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:16:16+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.155009s][吞吐率：6.45req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:17:37+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.172010s][吞吐率：5.81req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:18:10+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.212012s][吞吐率：4.72req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:18:30+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.223013s][吞吐率：4.48req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:18:57+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.197011s][吞吐率：5.08req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:18:59+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.238013s][吞吐率：4.20req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:19:20+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.164009s][吞吐率：6.10req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:20:06+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.182010s][吞吐率：5.49req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:20:46+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.271015s][吞吐率：3.69req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.082004s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:22:13+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.230013s][吞吐率：4.35req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.023001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:22:21+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.225013s][吞吐率：4.44req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:22:26+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.211012s][吞吐率：4.74req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:22:29+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.247014s][吞吐率：4.05req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-06-12T21:22:38+08:00 ] 127.0.0.1 GET /api/v1/banner/1
+[ info ] ceshi.cn/api/v1/banner/1 [运行时间：0.173010s][吞吐率：5.78req/s] [内存消耗：3,172.53kb] [文件加载：60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;port=3306;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` IN (1) [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (65,2,3,1) [ RunTime:0.001000s ]

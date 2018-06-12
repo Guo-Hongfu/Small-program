@@ -37,8 +37,11 @@ Route::get('api/:version/category/all', 'api/:version.Category/getAllCategories'
 Route::post('api/:version/token/user', 'api/:version.Token/getToken');
 
 Route::post('api/:version/address', 'api/:version.Address/createOrUpdateAddress');
-
+//订单支付接口
 Route::post('api/:version/order/','api/:version.Order/placeOrder');
+//历史订单详情接口
+Route::post('api/:version/order/','api/:version.Order/getDetail',[], ['id' => '\d+']);
+//查询用户的订单的简要信息接口
 Route::post('api/:version/order/by_user','api/:version.Order/getSummaryByUser');
 
 Route::post('api/:version/pay/pre_order','api/:version.Pay/getPreOrder');
