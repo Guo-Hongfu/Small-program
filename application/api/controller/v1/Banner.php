@@ -29,9 +29,10 @@ class Banner
         //AOP面向切面编程
         (new IDMustBePositiveInt())->goCheck();
         $banner = BannerModel::getBannerById($id);
-        if($banner->isEmpty()){
+        if(!$banner){
             throw new BannerMissException();
         }
+
         return $banner; //config里默认输出类型 'html -> json'
     }
 }

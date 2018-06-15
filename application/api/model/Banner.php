@@ -18,7 +18,7 @@ class Banner extends BaseModel
     public static function getBannerById($id) {
         //with 传参也可以是数组 with(['items','items1'])
         //items.img items下面还要带有img  嵌套的关联关系
-        $banner = self::with(['items','items.img'])->select($id);
+        $banner = self::with(['items','items.img'])->find($id);
         return $banner;
     }
 }
